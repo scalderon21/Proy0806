@@ -5,8 +5,8 @@ class Usuario{
     var $nombre;
     var $clave;
     
-    function __construct($usu="", $clave="") {
-        $this->idusuario=$usu;
+    function __construct($usu="",$clave=""){
+        $this->nombre=$usu;
         $this->clave=$clave;
     }
     
@@ -51,18 +51,14 @@ class Usuario{
     }
     
     function VerificaLocal(){
-        $usu="scalderon";
-        $key="123456";
-        if($this->nombre==$usu && $this->clave==$key)
+        $usu="hsilva";
+        $key="12345";
+        
+        if ($this->nombre==$usu && $this->clave==$key)
             return true;
         else
             return false;
-        
+    
     }
     
 }
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
